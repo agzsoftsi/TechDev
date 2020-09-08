@@ -17,7 +17,7 @@
   
   header {
     width: 100%;
-    background-image: url("images/background.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
@@ -96,6 +96,7 @@
   
   .button:hover, .button:active {
     opacity: 0.9;
+    color: white;
   }
 
 
@@ -146,9 +147,10 @@
   }
   
   .title::after {
-    content: "Lorem ipsum dolor set amet lorem ipsum";
+    content: "{ Coding 4 Fun }";
     display: block;
-    font-size: var(--font-medium);
+    font-size: var(--font-large);
+    color: #00B47F;
     position: relative;
     margin: 0.25rem 0;
   }
@@ -304,9 +306,14 @@
 
   /** icons styles **/
 
-  .holberton_school-icon-ic_sound, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
+  .fa-code, .holberton_school-icon-ic_video, .holberton_school-icon-ic_music, .holberton_school-icon-ic_hearing {
     color: var(--color-red);
     font-size: 46px;
+    content: "\f6bb";
+  }
+
+  .fa-code{
+    content: "\f6bb";
   }
   
 
@@ -343,12 +350,13 @@
 
 
 
-
   /** Main Section - Style Sheet 2-index - Results **/
+
+
 
   #results {
     color: white;
-    background-image: url("images/background.jpg");
+    background-image: url("../images/background.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     
