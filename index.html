@@ -8,6 +8,13 @@
     <title>TechDev</title>
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
   
 </head>
 <body>
@@ -18,7 +25,7 @@
               <input type="checkbox" id="menu-toggle"><label for="menu-toggle" id="menu-btn"></label>
               <img src="images/logo.png" alt="Comunity Logo" class="logo">
               <ul class="header-nav">
-                <li><a href="#what-we-do">What we do</a></li><li><a href="#results">Events</a></li><li><a href="#contact">Community</a></li>
+                <li><a href="#what-we-do" class="links">What we do</a></li><li><a class="links" href="#results">Events</a></li><li><a class="links" href="#contact">Community</a></li>
               </ul>
             </nav>
             <div class="header-content">
@@ -70,26 +77,68 @@
           <p>Our community is searching new knowledge, experiences and challenges organizes events such as Seminars, diplomas, 
             courses, workshops, laboratories, meetings, etc. The goal is simple, learn, teach, improve our knowledge about technologies.
           </p>
-          <div class="grid">
-            <div class="element">
-              <h2>+2%</h2>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="element">
-              <h2>+2%</h2>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="element">
-              <h2>+2%</h2>
-              <p>Lorem ipsum dolor</p>
-            </div>
-            <div class="element">
-              <h2>+2%</h2>
-              <p>Lorem ipsum dolor</p>
-            </div>
-          </div>
+          
+          <div class="row mx-auto">
+           
+            <div class="card m-2 text-center" style="max-width: 18rem;">
+              <div class="card-header">Meeting #1</div>
+              <div class="card-body">
+                  <h5 class="card-title">Welcome to TechDev</h5>
+                  <p class="card-text text-justify mx-0" style="width: 97%;">
+                    Short Presentation about our Community, and defining goals and rules with the Learning process
+                  </p>
+                  <a class="buttonEvent" href="TDCapp.apk">Watch it</a>
+              </div>
+             </div>
+
+             <div class="card m-2 text-center" style="max-width: 18rem;">
+              <div class="card-header">Meeting #2</div>
+              <div class="card-body">
+                  <h5 class="card-title">4th Industrial Revolution</h5>
+                  <p class="card-text text-justify mx-0" style="width: 97%;">
+                    Know what the 4th Industrial Revolution is and identify the development areas of the 4th Industrial Revolution
+                  </p>
+                  <a class="buttonEvent" href="TDCapp.apk">Watch it</a>
+              </div>
+             </div>
+
+             <div class="card m-2 text-center" style="max-width: 18rem;">
+              <div class="card-header">Meeting #3</div>
+              <div class="card-body">
+                  <h5 class="card-title">GitHub and Git</h5>
+                  <p class="card-text text-justify mx-0" style="width: 97%;">
+                    Learn to Master one of the tools most used by all professional web developers, programmers and code experts
+                  </p>
+                  <a class="buttonEvent" href="TDCapp.apk">Watch it</a>
+              </div>
+             </div>
+
+             <div class="card m-2 text-center" style="max-width: 18rem;">
+              <div class="card-header">Meeting #4</div>
+              <div class="card-body">
+                  <h5 class="card-title">Start with GitHub</h5>
+                  <p class="card-text text-justify mx-0" style="width: 97%;">
+                    Short Presentation about our Community, and defining goals and rules with the Learning process
+                  </p>
+                  <a class="buttonEvent" href="TDCapp.apk">Watch it</a>
+              </div>
+             </div>
+
+             <div class="card m-2 text-center" style="max-width: 18rem;">
+              <div class="card-header">Meeting #5</div>
+              <div class="card-body">
+                  <h5 class="card-title">Start with Git</h5>
+                  <p class="card-text text-justify mx-0" style="width: 97%;">
+                    We learn from how to use the Basic Git bash commands, to how to upload our Code to Github.
+                  </p>
+                  <a class="buttonEvent" href="TDCapp.apk">Watch it</a>
+              </div>
+             </div>
+
+
+
+           </div>
         </div>
-      </div>
 
 
       <!-- Contact -->
@@ -98,16 +147,74 @@
           <h1 class="section-title">COMMUNITY</h1>
           <p>The soul of our community is the people, our Vikings, meet them!
           </p>
-          <form action="#" method="POST" id="formContact">
-            <label for="name" class="input-label"></label>
-            <input type="text" name="Name" id="name" placeholder="Name">
-            <label for="email" class="input-label"></label>
-            <input type="email" name="Email" id="email" placeholder="Email">
-            <label for="message" class="input-label"></label>
-            <input type="text" name="Message" id="message" placeholder="Message">
-            <button class="button">Call to Action</button>
-         </form>
+          <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight row p-2 users mb-3">
+              
+              <div class="Username mx-2"><span class="fas fa-user-circle Userlogo"></span>Carlos Andres Garcia</div>
+              <div class="mx-2"><a href="#"><span class="fab fa-github" title="Visit GitHub"></span></div>
+              <div class="mx-2"><a href="#"><span class="fab fa-twitter" title="Follow on Twitter"></span></a></div>
+              <div class="mx-2 badges"><span class="fas fa-id-card badgelogo" title="Badge 100% Identified"></span</div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight row p-2 users mb-3">
+              
+              <div class="Username mx-2"><span class="fas fa-user-circle Userlogo"></span>Dydier Vargas</div>
+              <div class="mx-2"><a href="#"><span class="fab fa-github" title="Visit GitHub"></span></div>
+              <div class="mx-2"><a href="#"><span class="fab fa-twitter" title="Follow on Twitter"></span></a></div>
+              <div class="mx-2 badges"><span class="fas fa-id-card badgelogo" title="Badge 100% Identified"></span</div>
+            </div>
+          </div>
+
+
+          <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight row p-2 users mb-3">
+              
+              <div class="Username mx-2"><span class="fas fa-user-circle Userlogo"></span>Wilson Mosquera</div>
+              <div class="mx-2"><a href="#"><span class="fab fa-github" title="Visit GitHub"></span></div>
+              <div class="mx-2"><a href="#"><span class="fab fa-twitter" title="Follow on Twitter"></span></a></div>
+              <div class="mx-2 badges"><span class="fas fa-id-card badgelogo" title="Badge 100% Identified"></span</div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight row p-2 users mb-3">
+              
+              <div class="Username mx-2"><span class="fas fa-user-circle Userlogo"></span>Diego Fernando Trejos</div>
+              <div class="mx-2"><a href="#"><span class="fab fa-github" title="Visit GitHub"></span></div>
+              <div class="mx-2"><a href="#"><span class="fab fa-twitter" title="Follow on Twitter"></span></a></div>
+              <div class="mx-2 badges"><span class="fas fa-id-card badgelogo" title="Badge 100% Identified"></span</div>
+            </div>
+          </div>
+
+          <div class="d-flex flex-column bd-highlight mb-3">
+            <div class="p-2 bd-highlight row p-2 users mb-3">
+              
+              <div class="Username mx-2"><span class="fas fa-user-circle Userlogo"></span>Rodrigo Hincapie</div>
+              <div class="mx-2"><a href="#"><span class="fab fa-github" title="Visit GitHub"></span></div>
+              <div class="mx-2"><a href="#"><span class="fab fa-twitter" title="Follow on Twitter"></span></a></div>
+              <div class="mx-2 badges"><span class="fas fa-id-card badgelogo" title="Badge 100% Identified"></span</div>
+            </div>
+          </div>
           
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
         </div>
       </div>
     </main>
@@ -119,9 +226,9 @@
               <img src="images/logo.png" alt="TechDev Logo"
                 class="logo">
               <ul class="footer-nav">
-                <li><a href="#"><span class=""></span></a></li>
-                <li><a href="#"><span class=""></span></a></li>
-                <li><a href="#"><span class=""></span></a></li>
+                <li><a href="#"><span class="fab fa-github" title="Visit the GitHub Repository"></span></a></li>
+                <li><a href="#"><span class="fab fa-google-drive" title="Visit the Google Drive"></span></a></li>
+                <li><a href="#"><span class="fab fa-twitter" title="Follow on Twitter"></span></a></li>
               </ul>
             </nav>
               <p>&#169;TechDev 2020</p>
