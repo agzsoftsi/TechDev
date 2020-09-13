@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+a:hover{
+    color: #17BEC5;
+}
+
 /** global classes styling **/
 
 .container {
@@ -58,7 +62,7 @@ header {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  background-color: #eee;
+  background-color:#FE8066;
 }
 
 @media (max-width: 600px) {
@@ -155,11 +159,11 @@ nav > ul {
   height: 30px;
   margin: 15px 0;
   border: 0;
-  background-color: #f1c40f;
+  background-color: #FE8066;
 }
 
 #hero input[type="submit"]:hover {
-  background-color: orange;
+  background-color:#17BEC5;
   transition: background-color 1s;
 }
 
@@ -269,12 +273,12 @@ nav > ul {
 .product > button {
   border: 0;
   margin: 15px 0;
-  background-color: #f1c40f;
+  background-color: #FE8066;
   font-weight: 400;
 }
 
 .product > button:hover {
-  background-color: orange;
+  background-color:#17BEC5;
   transition: background-color 1s;
 }
 
